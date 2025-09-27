@@ -1,0 +1,258 @@
+[
+  {
+    "Id": 12345678,
+    "FirstName": "John",
+    "LastName": "Doe",
+    "CardDetails": {
+      "CardNumber": "1234-5678-9123-4567",
+      "Cvc": "123",
+      "ExpirationDate": "12/26",
+      "Pin": "1234"
+    },
+    "Balances": {
+      "GEL": 4000.50,
+      "USD": 640.0,
+      "EUR": 1824.91
+    },
+    "TransactionHistory": [
+      {
+        "TransactionDate": "2025-09-23T21:15:00",
+        "Type": "Deposit",
+        "AmountGEL": 0.0,
+        "AmountUSD": 100.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-23T21:20:00",
+        "Type": "Withdraw",
+        "AmountGEL": 50.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-23T21:30:00",
+        "Type": "Convert USD to GEL",
+        "AmountGEL": 35.0,
+        "AmountUSD": -100.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:04:19.066163+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 8754.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:06:26.5374422+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 0.0,
+        "AmountUSD": 500.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:06:56.2834526+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 0.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 50.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:08:26.1684395+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 126.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:08:35.4863907+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 0.0,
+        "AmountUSD": 50.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T17:16:09.9410062+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 380.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T18:20:12.0943794+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 100.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-27T19:28:46.5999641+04:00",
+        "Type": "PIN Change",
+        "AmountGEL": 0.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T00:01:55.1338067+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 200.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T00:02:19.0681918+04:00",
+        "Type": "PIN Change",
+        "AmountGEL": 0.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T02:29:02.246676+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 500.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T02:30:32.9488489+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 90000000.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T03:12:58.1064068+04:00",
+        "Type": "Conversion",
+        "AmountGEL": 27.50,
+        "AmountUSD": -10.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T03:13:44.5062769+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 9000000.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T03:14:01.3107231+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 80000000.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T03:14:29.8825411+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 1000000.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T03:14:56.7744406+04:00",
+        "Type": "Conversion",
+        "AmountGEL": -5227.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 1724.91
+      }
+    ]
+  },
+  {
+    "Id": 18541698,
+    "FirstName": "Alice",
+    "LastName": "Smith",
+    "CardDetails": {
+      "CardNumber": "6543-2109-8765-4321",
+      "Cvc": "456",
+      "ExpirationDate": "06/27",
+      "Pin": "5678"
+    },
+    "Balances": {
+      "GEL": 1200.0,
+      "USD": 0.0,
+      "EUR": 300.0
+    },
+    "TransactionHistory": [
+      {
+        "TransactionDate": "2025-09-23T21:15:00",
+        "Type": "Deposit",
+        "AmountGEL": 0.0,
+        "AmountUSD": 100.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-23T21:20:00",
+        "Type": "Withdraw",
+        "AmountGEL": 50.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      }
+    ]
+  },
+  {
+    "Id": 15789742,
+    "FirstName": "David",
+    "LastName": "Johnson",
+    "CardDetails": {
+      "CardNumber": "1321-6785-3364-2354",
+      "Cvc": "789",
+      "ExpirationDate": "11/25",
+      "Pin": "4321"
+    },
+    "Balances": {
+      "GEL": 200.0,
+      "USD": 50.0,
+      "EUR": 20.0
+    },
+    "TransactionHistory": []
+  },
+  {
+    "Id": 15467846,
+    "FirstName": "Maria",
+    "LastName": "Garcia",
+    "CardDetails": {
+      "CardNumber": "8764-9876-2145-1754",
+      "Cvc": "321",
+      "ExpirationDate": "01/28",
+      "Pin": "9999"
+    },
+    "Balances": {
+      "GEL": 750.0,
+      "USD": 250.0,
+      "EUR": 100.0
+    },
+    "TransactionHistory": [
+      {
+        "TransactionDate": "2025-09-28T00:01:55.1338067+04:00",
+        "Type": "Withdraw",
+        "AmountGEL": 200.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "2025-09-28T00:02:19.0681918+04:00",
+        "Type": "PIN Change",
+        "AmountGEL": 0.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      }
+    ]
+  },
+  {
+    "Id": 15461846,
+    "FirstName": "George",
+    "LastName": "Brown",
+    "CardDetails": {
+      "CardNumber": "7945-3817-5672-6982",
+      "Cvc": "159",
+      "ExpirationDate": "09/26",
+      "Pin": "0000"
+    },
+    "Balances": {
+      "GEL": 300.0,
+      "USD": 500.0,
+      "EUR": 0.0
+    },
+    "TransactionHistory": []
+  }
+]
