@@ -1,0 +1,32 @@
+2025-12-03 14:11:05.148 +04:00 [INF] Reading accounts from file: C:\Users\PC\Desktop\COMM_Back-end_C#\COMM_Back-end_C#_FirstProject\BankingApplication\Data\accounts.json
+2025-12-03 14:11:13.297 +04:00 [INF] User entered Card Number 1234-5678-9123-4567
+2025-12-03 14:11:14.395 +04:00 [INF] User entered Cvc 123
+2025-12-03 14:11:16.167 +04:00 [WRN] User entered invalid date or date format: 21/26
+2025-12-03 14:11:18.840 +04:00 [INF] User entered Card Number 1234-5678-9123-4567
+2025-12-03 14:11:21.590 +04:00 [INF] User entered Cvc 123
+2025-12-03 14:11:26.426 +04:00 [INF] User entered expiry date 12/26
+2025-12-03 14:11:27.976 +04:00 [INF] User John with id 12345678 successfully logged in.
+2025-12-03 14:11:29.368 +04:00 [INF] user John with id 12345678 checking balance GEL: 3000.50 USD: 1458.00 EUR: 1824.91 
+2025-12-03 14:11:36.143 +04:00 [INF] Account with id 12345678 Added Withdraw operation: {"TransactionDate":"2025-12-03T14:11:36.1277442+04:00","Type":"Withdraw","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+2025-12-03 14:11:36.153 +04:00 [INF] Accounts successfully saved.
+2025-12-03 14:11:37.871 +04:00 [INF] user John with id 12345678 checking balance GEL: 2900.50 USD: 1458.00 EUR: 1824.91 
+2025-12-03 14:11:43.198 +04:00 [INF] Account with id 12345678 Added Deposit operation: {"TransactionDate":"2025-12-03T14:11:43.1980043+04:00","Type":"Deposit","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+2025-12-03 14:11:43.199 +04:00 [INF] Accounts successfully saved.
+2025-12-03 14:11:45.943 +04:00 [INF] user with id 12345678 getting last 5 transactions "transactionHistory": [
+{"TransactionDate":"2025-12-03T14:11:43.1980043+04:00","Type":"Deposit","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+{"TransactionDate":"2025-12-03T14:11:36.1277442+04:00","Type":"Withdraw","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+{"TransactionDate":"2025-09-28T00:01:55.1338067+04:00","Type":"Withdraw","AmountGEL":200.0,"AmountUSD":0.0,"AmountEUR":0.0}
+{"TransactionDate":"2025-09-27T19:28:46.5999641+04:00","Type":"PIN Change","AmountGEL":0.0,"AmountUSD":0.0,"AmountEUR":0.0}
+{"TransactionDate":"2025-09-27T18:20:12.0943794+04:00","Type":"Withdraw","AmountGEL":100.0,"AmountUSD":0.0,"AmountEUR":0.0}
+ ]
+2025-12-03 14:11:48.817 +04:00 [INF] user John with id 12345678 checking balance GEL: 3000.50 USD: 1458.00 EUR: 1824.91 
+2025-12-03 14:11:58.902 +04:00 [WRN] Account with id 12345678 doesn't have this currency: gel.
+2025-12-03 14:11:58.903 +04:00 [WRN] Account with id 12345678 doesn't have this currency: gel.
+2025-12-03 14:12:00.997 +04:00 [INF] user John with id 12345678 checking balance GEL: 3000.50 USD: 1458.00 EUR: 1824.91 
+2025-12-03 14:12:04.628 +04:00 [INF] user with id 12345678 getting last 5 transactions "transactionHistory": [
+{"TransactionDate":"2025-12-03T14:11:43.1980043+04:00","Type":"Deposit","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+{"TransactionDate":"2025-12-03T14:11:36.1277442+04:00","Type":"Withdraw","AmountGEL":100,"AmountUSD":0,"AmountEUR":0}
+{"TransactionDate":"2025-09-28T00:01:55.1338067+04:00","Type":"Withdraw","AmountGEL":200.0,"AmountUSD":0.0,"AmountEUR":0.0}
+{"TransactionDate":"2025-09-27T19:28:46.5999641+04:00","Type":"PIN Change","AmountGEL":0.0,"AmountUSD":0.0,"AmountEUR":0.0}
+{"TransactionDate":"2025-09-27T18:20:12.0943794+04:00","Type":"Withdraw","AmountGEL":100.0,"AmountUSD":0.0,"AmountEUR":0.0}
+ ]

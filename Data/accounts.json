@@ -10,8 +10,8 @@
       "Pin": "1234"
     },
     "Balances": {
-      "GEL": 4000.50,
-      "USD": 640.0,
+      "GEL": 3000.50,
+      "USD": 1458.00,
       "EUR": 1824.91
     },
     "TransactionHistory": [
@@ -35,125 +35,6 @@
         "AmountGEL": 35.0,
         "AmountUSD": -100.0,
         "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:04:19.066163+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 8754.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:06:26.5374422+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 0.0,
-        "AmountUSD": 500.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:06:56.2834526+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 0.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 50.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:08:26.1684395+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 126.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:08:35.4863907+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 0.0,
-        "AmountUSD": 50.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T17:16:09.9410062+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 380.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T18:20:12.0943794+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 100.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-27T19:28:46.5999641+04:00",
-        "Type": "PIN Change",
-        "AmountGEL": 0.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T00:01:55.1338067+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 200.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T00:02:19.0681918+04:00",
-        "Type": "PIN Change",
-        "AmountGEL": 0.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T02:29:02.246676+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 500.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T02:30:32.9488489+04:00",
-        "Type": "Deposit",
-        "AmountGEL": 90000000.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T03:12:58.1064068+04:00",
-        "Type": "Conversion",
-        "AmountGEL": 27.50,
-        "AmountUSD": -10.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T03:13:44.5062769+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 9000000.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T03:14:01.3107231+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 80000000.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T03:14:29.8825411+04:00",
-        "Type": "Withdraw",
-        "AmountGEL": 1000000.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 0.0
-      },
-      {
-        "TransactionDate": "2025-09-28T03:14:56.7744406+04:00",
-        "Type": "Conversion",
-        "AmountGEL": -5227.0,
-        "AmountUSD": 0.0,
-        "AmountEUR": 1724.91
       }
     ]
   },
@@ -254,5 +135,30 @@
       "EUR": 0.0
     },
     "TransactionHistory": []
+  },
+  {
+    "Id": 18541699,
+    "FirstName": "edify",
+    "LastName": "tech",
+    "CardDetails": {
+      "CardNumber": "0136-8348-4195-8142",
+      "Cvc": "128",
+      "ExpirationDate": "12/29",
+      "Pin": "1234"
+    },
+    "Balances": {
+      "GEL": 800.0,
+      "USD": 0.0,
+      "EUR": 0.0
+    },
+    "TransactionHistory": [
+      {
+        "TransactionDate": "2025-12-03T14:34:18.8811024+04:00",
+        "Type": "Deposit",
+        "AmountGEL": 800.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      }
+    ]
   }
 ]

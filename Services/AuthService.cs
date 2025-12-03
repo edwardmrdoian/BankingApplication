@@ -4,9 +4,10 @@ using Microsoft.Extensions.Logging;
 
 namespace BankingApplication.Services
 {
-    public class AuthService(List<Account> accounts)
+    public class AuthService(List<Account> accounts, JsonStorageService storageService)
     {
         private readonly List<Account>? accounts = accounts;
+        private readonly JsonStorageService storage = storageService;
         private readonly ILogger<AuthService> logger = AtmLoggerFactory.CreateLogger<AuthService>();
 
         public Account? Login()
@@ -123,6 +124,138 @@ namespace BankingApplication.Services
                     continue;
                 }
             }
+        }
+
+        public Account? Register()
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("\n=== USER REGISTRATION ===");
+
+                    Console.Write("First name: ");
+                    string? firstName = Console.ReadLine();
+                    if (firstName?.ToLower() == "exit") return null;
+                    if (string.IsNullOrWhiteSpace(firstName))
+                    {
+                        Console.WriteLine("\nFirst name is required.\n");
+                        continue;
+                    }
+                    logger.LogInformation("User entered first name: {first}", firstName);
+
+                    Console.Write("Last name: ");
+                    string? lastName = Console.ReadLine();
+                    if (lastName?.ToLower() == "exit") return null;
+                    if (string.IsNullOrWhiteSpace(lastName))
+                    {
+                        Console.WriteLine("\nLast name is required.\n");
+                        continue;
+                    }
+                    logger.LogInformation("User entered last name: {last}", lastName);
+
+                    Console.Write("Create PIN (4 digits): ");
+                    string? pin = Console.ReadLine();
+                    if (pin?.ToLower() == "exit") return null;
+                    if (string.IsNullOrWhiteSpace(pin))
+                    {
+                        Console.WriteLine("\nPIN is required.\n");
+                        continue;
+                    }
+                    if (pin.Length != 4 || !pin.All(char.IsDigit))
+                    {
+                        Console.WriteLine("\nInvalid PIN. Length must be 4 digits.\n");
+                        logger.LogWarning("User entered invalid PIN format: {pin}", pin);
+                        continue;
+                    }
+                    logger.LogInformation("User created PIN");
+
+                    string cardNumber = GenerateCardNumber();
+                    string cvc = GenerateCvc();
+                    string expiration = GenerateExpirationDate();
+
+                    long newId = (accounts == null || accounts.Count == 0)
+                        ? 1
+                        : accounts.Max(a => a.Id) + 1;
+
+                    var newAccount = new Account(
+                        newId,
+                        firstName,
+                        lastName,
+                        new CardDetails(cardNumber, cvc, expiration, pin),
+                        new Dictionary<string, decimal>
+                        {
+                            {"GEL", 0},
+                            {"USD", 0},
+                            {"EUR", 0}
+                        },
+                        new List<TransactionHistory>()
+                    );
+
+                    accounts.Add(newAccount);
+                    storage.SaveAccounts(accounts);
+
+                    Console.WriteLine("\n=== REGISTRATION SUCCESSFUL ===");
+                    Console.WriteLine($"User ID: {newAccount.Id}");
+                    Console.WriteLine($"Card Number: {newAccount.CardDetails.CardNumber}");
+                    Console.WriteLine($"PIN: {newAccount.CardDetails.Pin}");
+                    Console.WriteLine($"CVC: {newAccount.CardDetails.Cvc}");
+                    Console.WriteLine($"Expiration Date: {newAccount.CardDetails.ExpirationDate}");
+                    Console.WriteLine("Please save this information.\n");
+
+                    logger.LogInformation(
+                        "New account created: ID={id}, Name={first} {last}",
+                        newAccount.Id, newAccount.FirstName, newAccount.LastName
+                    );
+
+                    return newAccount;
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, "Unexpected error during registration.");
+                    Console.WriteLine("Something went wrong. Please try again.\n");
+                    continue;
+                }
+            }
+        }
+
+
+        private static string GenerateCardNumber()
+        {
+            Random rnd = new Random();
+            int[] digits = new int[16];
+
+            for (int i = 0; i < 15; i++)
+                digits[i] = rnd.Next(0, 10);
+
+            // Luhn checksum for card number validity
+            int sum = 0;
+            for (int i = 0; i < 15; i++)
+            {
+                int digit = digits[14 - i];
+                if (i % 2 == 0)
+                {
+                    digit *= 2;
+                    if (digit > 9) digit -= 9;
+                }
+                sum += digit;
+            }
+
+            digits[15] = (10 - (sum % 10)) % 10;
+
+            string cardNumber = Utils.Utils.CardNumberFormatHelper(string.Concat(digits)) ?? string.Empty;
+            return cardNumber;
+        }
+
+        private static string GenerateCvc()
+        {
+            Random rnd = new Random();
+            return rnd.Next(100, 999).ToString();
+        }
+        private static string GenerateExpirationDate()
+        {
+            var future = DateTime.Now.AddYears(4);
+            return future.ToString("MM/yy");
         }
     }
 }
